@@ -229,16 +229,6 @@ This allows technology initiatives to remain aligned with the company's operatio
 
 ---
 
-# 🤝 Open Source & Collaboration
-
-Some repositories may be public for educational, experimental or open-source purposes.
-
-Projects containing proprietary business logic, internal processes, personal data or infrastructure information remain private.
-
-For contribution guidelines, check the documentation of each individual repository.
-
----
-
 <div align="center">
 
 ## Santamérica Technology
