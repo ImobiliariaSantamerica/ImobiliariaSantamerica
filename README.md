@@ -1,237 +1,322 @@
-# Santamérica Technology
+# Santamérica — Technology & Engineering
 
-### Engineering • Automation • Software • AI
+> Technology, automation, and software engineering to transform internal processes.
 
-Technology is part of how Santamérica evolves its business.
+**Santamérica** is a real estate company that leverages technology to modernize its processes, integrate operations, and develop internal solutions focused on efficiency, security, and productivity.
 
-The **Santamérica Technology** team designs and develops software, automation and infrastructure solutions to improve internal operations, connect systems and create better digital workflows.
-
----
-
-## 🚀 What We Build
-
-Our engineering ecosystem focuses on four main areas:
-
-| Area                       | Focus                                                   |
-| -------------------------- | ------------------------------------------------------- |
-| 💻 Software Engineering    | Internal applications and business systems              |
-| ⚙️ Automation              | Process automation and system integrations              |
-| 🔐 Security                | Secure architecture, access control and data protection |
-| 🤖 Artificial Intelligence | AI-powered applications and intelligent workflows       |
+This repository represents the public **Santamérica Technology & Engineering** space, bringing together projects, initiatives, and technologies used to develop internal solutions.
 
 ---
 
-## 🧩 Our Engineering Approach
+## 🏢 About Santamérica
 
-We believe internal software should be treated as real software products.
+Santamérica operates in the real estate market, using technology as a strategic component in the evolution of its processes.
 
-Our development principles include:
+Our technology team builds tools that support different areas of the company, focusing on:
 
-```text
-Product Thinking
-      ↓
-Modular Architecture
-      ↓
-Clean Code
-      ↓
-Security by Design
-      ↓
-Automated Testing
-      ↓
-Continuous Improvement
-```
+* ⚙️ Automating repetitive processes
+* 🔗 Integrating systems and information
+* 📊 Improving data availability and organization
+* 🔐 Increasing security and access control
+* 🚀 Developing custom internal solutions
+* 🧩 Modularizing and standardizing applications
+* 🤖 Exploring Artificial Intelligence and automation
 
-We prioritize solutions that are:
+---
 
+# 💻 Technology
+
+Our technology architecture is guided by a set of core principles:
+
+### Modularity
+
+Projects are structured using modular architectures to simplify maintenance, evolution, scalability, and component reuse.
+
+### Security by Design
+
+Security is considered throughout the entire software lifecycle, from architecture and infrastructure to implementation and deployment.
+
+Our practices include:
+
+* Access control
+* Authentication and authorization
+* Credential and secret management
+* Principle of least privilege
+* Data validation
+* API protection
+* Auditing and traceability
+* Environment isolation
+
+### Clean Code
+
+We strive to maintain code that is:
+
+* Readable
+* Testable
 * Modular
-* Secure
+* Documented
 * Maintainable
-* Observable
-* Scalable
-* Simple to operate
+
+We apply concepts such as **SOLID**, **Clean Architecture**, and separation of responsibilities whenever appropriate for the project.
+
+---
+
+# 🧩 Internal Projects
+
+Our technology team develops different categories of internal systems and solutions.
+
+### 🏢 Business Systems
+
+Solutions designed to support operational and administrative processes.
+
+Examples:
+
+* Process management
+* Operational control
+* Document management
+* Internal workflows
+* Checklists
+* Customer service systems
+
+### 🔄 Automation
+
+Automation of tasks and integration between services.
+
+Examples:
+
+* System integrations
+* Automated data processing
+* Workflows
+* Information synchronization
+* Repetitive process automation
+
+### 📊 Data & Analytics
+
+Tools focused on organizing, processing, analyzing, and visualizing data.
+
+Examples:
+
+* Dashboards
+* Key performance indicators
+* Reports
+* Data processing
+* Integration with internal databases
+
+### 🤖 Artificial Intelligence
+
+Research and development of applications powered by Artificial Intelligence.
+
+Potential applications include:
+
+* Internal assistants
+* Information classification and processing
+* Intelligent automation
+* Document analysis
+* Decision support
+
+---
+
+# 🛠️ Technology Stack
+
+Our technology stack varies according to project requirements, but our ecosystem includes modern technologies for web development, APIs, data, automation, and infrastructure.
+
+### Front-end
+
+* React
+* TypeScript
+* JavaScript
+* HTML
+* CSS
+
+### Back-end
+
+* Node.js
+* TypeScript
+* REST APIs
+* Modular Monolith
+* Service-oriented architecture when necessary
+
+### Databases
+
+* PostgreSQL
+* Relational databases
+* Structured data storage
+
+### Infrastructure
+
+* Docker
+* Docker Compose
+* Linux
+* Windows Server
+* Network infrastructure
+
+### Cloud & Integrations
+
+* Google Workspace
+* Google APIs
+* Cloud services
+* External APIs
+
+### Development
+
+* Git
+* GitHub
+* CI/CD
+* Automated testing
+* Code review
+* Documentation
 
 ---
 
 # 🏗️ Architecture
 
-For many internal applications, we prefer a **Modular Monolith** architecture.
+For medium-sized internal applications, we prioritize a **Modular Monolith** architecture.
 
 ```text
-                    Application
-                         │
-        ┌────────────────┼────────────────┐
-        │                │                │
-      Auth             Core           Integrations
-        │                │                │
-        ├──────────┬─────┴─────┬──────────┤
-        │          │           │          │
-      Users     Business    Documents   Reports
-        │          │           │          │
-        └──────────┴─────┬─────┴──────────┘
-                         │
-                     Database
+Application
+│
+├── Authentication
+├── Users
+├── Permissions
+├── Business Modules
+├── Documents
+├── Notifications
+├── Integrations
+└── Reports
 ```
 
-This approach allows us to maintain strong boundaries between domains while keeping infrastructure and deployment complexity under control.
+Each module has clearly defined responsibilities and low coupling.
+
+When necessary, individual components can later be extracted into independent services.
+
+### Why Modular Monolith?
+
+This approach provides:
+
+* Faster development
+* Lower operational complexity
+* Simplified deployment
+* Clear separation of responsibilities
+* Easier testing
+* Gradual evolution toward distributed architectures
 
 ---
 
-# 🔐 Security
+# 🔐 Security & Privacy
 
-Security is considered throughout the software lifecycle.
+Security and privacy are fundamental requirements across our projects.
 
-Our engineering practices may include:
+Applications that process internal information must consider security principles from the beginning of the development lifecycle.
 
-* Authentication & Authorization
-* Role-Based Access Control
-* Secure API design
-* Input validation
-* Secrets management
-* Audit logging
-* Least-privilege access
-* Secure development practices
-* Data protection
+Our practices include:
 
-Applications handling personal or sensitive information must also consider applicable requirements of the **Brazilian General Data Protection Law (LGPD)**.
+```text
+Authentication
+      ↓
+Authorization
+      ↓
+Input Validation
+      ↓
+Business Rules
+      ↓
+Data Access
+      ↓
+Audit / Logging
+```
 
-> Public repositories do not contain credentials, personal information, production secrets or confidential infrastructure details.
+We also seek to comply with applicable requirements of **LGPD (Brazilian General Data Protection Law)**.
+
+> This public repository does not contain credentials, personal data, confidential information, or sensitive internal infrastructure configurations.
 
 ---
 
-# 🛠️ Technology
+# 📁 Repository Organization
 
-Our technology stack varies according to the requirements of each project.
-
-### Front-end
+Projects may follow structures such as:
 
 ```text
-React
-TypeScript
-JavaScript
-HTML
-CSS
+src/
+│
+├── app/
+│   ├── config/
+│   ├── database/
+│   └── server/
+│
+├── modules/
+│   ├── auth/
+│   ├── users/
+│   ├── contracts/
+│   ├── documents/
+│   └── reports/
+│
+├── shared/
+│   ├── errors/
+│   ├── utils/
+│   └── types/
+│
+└── tests/
+    ├── unit/
+    ├── integration/
+    └── e2e/
 ```
 
-### Back-end
-
-```text
-Node.js
-TypeScript
-REST APIs
-```
-
-### Data
-
-```text
-PostgreSQL
-Relational Databases
-Data Integration
-```
-
-### Infrastructure
-
-```text
-Docker
-Linux
-Windows Server
-Networking
-```
-
-### Integrations
-
-```text
-Google Workspace
-Google APIs
-REST APIs
-External Services
-```
-
-### AI
-
-```text
-LLMs
-AI Agents
-AI-assisted Development
-Intelligent Automation
-```
-
----
-
-# 📂 Projects
-
-Our repositories can include:
-
-### Internal Business Systems
-
-Applications designed to support operational and administrative processes.
-
-### Automation
-
-Tools that eliminate repetitive work and connect different systems.
-
-### Developer Tools
-
-Libraries, utilities and infrastructure components used by engineering teams.
-
-### AI
-
-Experiments and production-oriented solutions involving artificial intelligence.
-
-### Open Source
-
-Selected projects and components that can be safely shared with the community.
+The structure may be adapted according to the specific requirements of each application.
 
 ---
 
 # 🧪 Engineering Practices
 
-We continuously improve our development process through:
+We apply engineering practices designed to ensure that our systems can continue evolving without unnecessary increases in complexity.
 
-* Git-based workflows
+### Development
+
+* Git Flow / Trunk-Based Development, depending on the project
 * Pull Requests
-* Code Reviews
-* Automated Testing
-* Static Analysis
+* Code Review
+* Conventional Commits
 * Documentation
-* CI/CD
-* Infrastructure as Code
-* Monitoring and Logging
+* Automated Testing
 
-Our goal is not simply to ship software.
+### Quality
 
-Our goal is to build software that can **continue evolving**.
+* Unit Tests
+* Integration Tests
+* End-to-End Tests
+* Static Analysis
+* Linting
+* Type Safety
+
+### Deployment
+
+```text
+Development
+     ↓
+Testing
+     ↓
+Code Review
+     ↓
+Build
+     ↓
+Deployment
+     ↓
+Monitoring
+```
 
 ---
 
-# 🌎 Technology & Business
+# 🚀 Our Approach
 
-Technology exists to solve business problems.
+We believe technology should be more than software.
 
-Our engineering process therefore connects:
+It should be a tool for improving processes, reducing operational friction, increasing reliability, and enabling people to work more efficiently.
 
-```text
-Business Problem
-       ↓
-Product Understanding
-       ↓
-Solution Design
-       ↓
-Software Development
-       ↓
-Automation
-       ↓
-Measurement
-       ↓
-Continuous Improvement
-```
-
-This allows technology initiatives to remain aligned with the company's operational needs.
+Our goal is to continuously evolve Santamérica's technological ecosystem through **software engineering, automation, data, infrastructure, and Artificial Intelligence**.
 
 ---
 
 <div align="center">
 
-## Santamérica Technology
+## Santamérica Innovation Lab
 
 **Building software for better operations.**
 
